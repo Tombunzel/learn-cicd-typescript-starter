@@ -5,6 +5,6 @@ describe("auth", () => {
     const headers = {
       authorization: "Header ApiKey",
     };
-    expect(getAPIKey(headers)).toBeDefined();
+    expect(getAPIKey(headers)).not.toBeNull();
   });
 });
